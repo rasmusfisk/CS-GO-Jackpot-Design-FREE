@@ -1,0 +1,92 @@
+﻿<!--
+    ***/////////////////////////////***
+    This full webside is designed by: UnScope. http://steamcommunity.com/id/rasmusvejby/
+    The navigation is designed by codyhouse, here is the link to the site: https://codyhouse.co/gem/responsive-sidebar-navigation/
+    And i used bootstrap, to create the most of it!
+    You are free to use and edit this to your own purpose. 
+
+    If you used it for your website, please add me on steam and send a link! I would like to see it live!
+
+    Please do NOT add me onn steam to get help with the following:
+    - Redesign it, you are on your own.
+    - Help you setup the website
+    - For help setting op the followin: Scripts/Db/Api Or anything coding relatede
+    - Do not add me unless you are using it, and will show me it live.
+
+    The only reason to add me is, to share the website link if you use it!
+
+    Do you want a custom design? Designed by me? 
+    Then send me a email to: support@luckycs.com then i'll take contact to you :)
+    ***/////////////////////////////***
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/reset.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header class="cd-main-header">
+        <!--Post your logo in src="HERE"-->
+        <a href="#0" class="cd-nav-trigger"><span></span></a>
+        <!--Insert your logo in the src="" field-->
+        <a href="#0" class="cd-logo"><img src="" alt="Your logo here!"></a>
+    </header> 
+
+    <main class="cd-main-content">
+        <nav class="cd-side-nav">
+            <ul>
+                <!--Place your sitename here-->
+                <li class="cd-label">YOUR SITE NAME</li>
+                <!--Place your sitename here END-->
+
+                <li class="has-children comments active">
+                    <a href="#">Login</a>
+                    <ul>
+                        <li><a href="#"><img class="img-responsive" id="login" src="~/img/sits_large_border.png" /></a></li>
+                    </ul>
+                </li>
+
+                <li class="has-children overview active">
+                    <a href="#">Start Playing</a>
+                    <ul>
+                        <li>@Html.ActionLink("Jackpot", "Index", "Home")</li>
+                        <li>@Html.ActionLink("How To Play?", "HTP", "Home")</li>
+                    </ul>
+                </li>
+                <li class="has-children notifications active">
+                    <a href="#">Information</a>
+                    <ul>
+                        <li><a href="#">Provably Fair</a></li>
+                        <li><a href="#">Terms Of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-children comments active">
+                    <a href="#">Need help?</a>
+                    <ul>
+                        <li><a href="https://www.tawk.to/">Support <br />Go here and signup a support account</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span id="DevelInf"><a href="http://steamcommunity.com/id/rasmusvejby/">Designed By UnScope</a></span>
+        </nav>
+
+        <div class="content-wrapper">
+            @RenderBody()
+        </div> <!-- .content-wrapper -->
+    </main> <!-- .cd-main-content -->
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/jquery.menu-aim.js"></script>    
+</body>
+</html>

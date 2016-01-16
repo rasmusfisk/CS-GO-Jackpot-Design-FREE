@@ -1,0 +1,194 @@
+﻿* {
+    color: #fff;
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+.btn-DarkBlue {
+    background-color: #1C1F22;
+    width: 100%;
+    color: #fff;
+}
+
+.Stat_Top {
+    margin-top: 50px;
+}
+
+.Stat_Pull {
+    margin-left: 9%;
+}
+
+@media only screen and (max-width: 768px) {
+    .Stat_Pull {
+        margin-left: 0%;
+    }
+}
+
+#login {
+    width: 90px;
+    margin: 0px auto;
+}
+
+.StatBox {
+    color: #fff;
+    padding: 25px;
+    background-color: #3E454C;
+}
+
+.GameItemsNum {
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 1366px) {
+    .GameItemsNum {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .GameItemsNum {
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .GameItemsNum {
+        margin-top: 25%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .GameItemsNum {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .GameItemsNum {
+        margin-top: 5%;
+    }
+}
+
+.Items {
+    padding-top: 20px;
+}
+
+.progress {
+    font-weight: bold;
+    height: 50px;
+    background-color: #1C1F22;
+}
+
+.progress-bar {
+    background-color: #3E454C;
+}
+
+#DevelInf {
+    position: fixed;
+    bottom: 0px;
+    width: 150px;
+}
+
+.GameItemsImage {
+    margin-top: 15px;
+    background-color: #3E454C;
+    width: 100%;
+    height: 150px;
+    overflow-x: scroll;
+}
+
+.test {
+    white-space: nowrap;
+    font-size: 0;
+    max-width: 135px;
+    height: auto;
+    color: #fff;
+}
+
+summary{
+  outline:none;
+}
+
+    .test img {
+        padding: 25px;
+        display: inline-block;
+    }
+
+::-webkit-scrollbar {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px #1C1F22;
+}
+
+
+#TotalBetUserTitle {
+    outline-style: none;
+    margin-top: 16px;
+    font-size: 28px;
+    background-color: #1C1F22;
+    padding: 25px;
+}
+
+#TotalBetUser {
+    outline-style: none;
+    font-size: 15px;
+    background-color: #3E454C;
+    padding: 25px;
+}
+
+#JpToalValue {
+    outline-style: none;
+    margin-top: 16px;
+    font-size: 28px;
+    background-color: #1C1F22;
+    padding: 25px;
+}
+
+#chat {
+    opacity: 0.8;
+    width: 50%;
+    height: 350px;
+}
+
+@media only screen and (max-width: 768px) {
+    #chat {
+        width: 100%;
+    }
+}
+
+#UserBet {
+    margin-top: 5px;
+    width: 29px;
+    height: 29px;
+    padding: 0px;
+}
+
+#HTPBG {
+    background-color: #1C1F22;
+    opacity: 0.75;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;
+}
+
+.upupup{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.TextHTP {
+    padding: 25px;
+}
+
+.TopPush {
+    margin-top: 4%;
+}
+
+.left {
+    text-align: left;
+}

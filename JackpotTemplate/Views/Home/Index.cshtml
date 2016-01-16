@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    <script src="~/Scripts/main.js"></script>
+}
+
+<div class="Stat_Top">
+    <div class="StatBox col-sm-3">
+        <b>Users online: </b>
+        <span class="Users">
+            <!--CHECK THE JQUERY CODE FOR INFO! (IN BOTTOM OF SITE)-->
+        </span>
+    </div>
+    <div class="StatBox col-sm-3">
+        <b>Bets Placed: </b>
+        <span class="Placed">
+            <!--CHECK THE JQUERY CODE FOR INFO! (IN BOTTOM OF SITE)-->
+        </span>
+    </div>
+    <div class="StatBox col-sm-3">
+        <b>Games Played: </b>
+        <span class="GP">
+            <!--CHECK THE JQUERY CODE FOR INFO! (IN BOTTOM OF SITE)-->
+        </span>
+    </div>
+    <div class="StatBox col-sm-3">
+        <b>Total Overall Bet: </b>
+        <span class="TOB">
+            <!--CHECK THE JQUERY CODE FOR INFO! (IN BOTTOM OF SITE)-->
+        </span>
+    </div>
+</div>
+
+<div class="GameItemsNum">
+    <div class="col-sm-12">
+        <div class="progress">
+            <!--You will have to make a Script that can replace the width with the num of items in que!-->
+            <div class="progress-bar Items" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:15%">
+                <!--Here you must place the counter and replace with the static!-->
+                15/100 Items
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Deposit">
+    <div class="col-sm-12">
+        <a class="btn btn-DarkBlue" href="#">Deposit</a>
+    </div>
+</div>
+
+<div class="col-sm-12">
+    <div class="GameItemsImage">
+        <div class="test">
+            <!--Here you will place you foreach loop where it displays the images, and what else you want to show on the items.-->
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            <img class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12">
+    <div id="TotalBetUserTitle" class="col-sm-6">
+        <span>Current Round Users</span>
+    </div>
+    <div id="JpToalValue" class="col-sm-6">
+        <span>Total Jackpot Value: <b class="pull-right">1.71$</b></span>
+    </div>
+</div>
+
+<div class="col-sm-12">
+    <div id="TotalBetUser" class="col-sm-6">
+        <!--Create your own design with span tags!-->
+        <!--In the href="" Set a user steam link-->
+        <details>
+            <summary>
+                <a href="#">
+                    <span>Test User</span>
+                    <span class="pull-right">10 Items - 0.75$</span>
+                </a>
+            </summary>
+            <hr />
+            <p class="test">
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+                <img id="UserBet" class="img-responsive" src="https://steamcommunity-a.akamaihd.net/economy/image/class/730/520025252/200fx200f" />
+            </p>
+        </details>
+    </div>
+    <div class="TwitchChat">
+        <!--Replace with your chat popup url-->
+        <iframe src="http://www.twitch.tv/unscope/chat?popout=" id="chat"></iframe>
+    </div>
+</div>
+<script>
+    jQuery(function ($) {
+        //Users Online
+        $('.Users').countTo({
+            from: 0, //This is where the count starts
+            to: 1337, //Here you can chose what it needs to count to
+            speed: 2500, //This is at what speed in ms
+            refreshInterval: 50, //How often is needs to update in ms. 50 Recomennded
+            onComplete: function (value) {
+                console.debug(this);
+            }
+        });
+
+        //Bets Placed
+        $('.Placed').countTo({
+            from: 0, //This is where the count starts
+            to: 420, //Here you can chose what it needs to count to
+            speed: 2500, //This is at what speed in ms
+            refreshInterval: 50, //How often is needs to update in ms. 50 Recomennded
+            onComplete: function (value) {
+                console.debug(this);
+            }
+        });
+
+        //Games Played
+        $('.GP').countTo({
+            from: 50, //This is where the count starts
+            to: 1337, //Here you can chose what it needs to count to
+            speed: 5000, //This is at what speed in ms
+            refreshInterval: 50, //How often is needs to update in ms. 50 Recomennded
+            onComplete: function (value) {
+                console.debug(this);
+            }
+        });
+
+        //Total Overall Bet
+        $('.TOB').countTo({
+            from: 0, //This is where the count starts
+            to: 37819, //Here you can chose what it needs to count to
+            speed: 2500, //This is at what speed in ms
+            refreshInterval: 50, //How often is needs to update in ms. 50 Recomennded
+            onComplete: function (value) {
+                console.debug(this);
+            }
+        });
+    });
+</script>
